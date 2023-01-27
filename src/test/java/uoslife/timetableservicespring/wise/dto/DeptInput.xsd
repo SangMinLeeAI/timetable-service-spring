@@ -1,0 +1,30 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="subDeptList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="list" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:float" name="prt_ord"/>
+                    <xs:element type="xs:string" name="dept"/>
+                    <xs:element type="xs:string" name="dept_code_nm"/>
+                    <xs:element type="xs:string" name="dept_nm"/>
+                    <xs:element type="xs:string" name="up_nm"/>
+                    <xs:element type="xs:string" name="up_dept"/>
+                    <xs:element type="xs:float" name="dept_div"/>
+                    <xs:element type="xs:float" name="colg"/>
+                    <xs:element type="xs:string" name="colg_nm"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="_COLUMNS_OF_TABLE_TO_TEXT_"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

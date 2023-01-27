@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="mainlist">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="list">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="year"/>
+                    <xs:element type="xs:string" name="term"/>
+                    <xs:element type="xs:string" name="subject_div"/>
+                    <xs:element type="xs:string" name="subject_div2"/>
+                    <xs:element type="xs:string" name="subject_no"/>
+                    <xs:element type="xs:string" name="class_div"/>
+                    <xs:element type="xs:string" name="subject_nm"/>
+                    <xs:element type="xs:string" name="sub_dept"/>
+                    <xs:element type="xs:string" name="day_night_nm"/>
+                    <xs:element type="xs:string" name="shyr"/>
+                    <xs:element type="xs:string" name="credit"/>
+                    <xs:element type="xs:string" name="class_nm"/>
+                    <xs:element type="xs:string" name="prof_nm"/>
+                    <xs:element type="xs:string" name="class_type"/>
+                    <xs:element type="xs:string" name="etc_permit_yn"/>
+                    <xs:element type="xs:string" name="sec_permit_yn"/>
+                    <xs:element type="xs:string" name="tlsn_limit_count"/>
+                    <xs:element type="xs:string" name="tlsn_count"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:string" name="_COLUMNS_OF_TABLE_TO_TEXT_"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
